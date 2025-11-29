@@ -17,10 +17,10 @@ export default function PokemonContainer({ type }) {
     return (
         <div>
             {
-                pokemons.map(({pokemon}) => {
+                pokemons.map((pokemonCorrenteDoFor) => {
                     return (
                         <PokemonCard
-                            pokemon={pokemon}
+                            pokemon={pokemonCorrenteDoFor.pokemon}
                         />
                     )
                 })
