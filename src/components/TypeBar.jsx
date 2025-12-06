@@ -19,7 +19,8 @@ export default function Typebar({ setType }) {
 
     return (
         <div style={{
-            display: "flex"
+            display: "grid",
+           gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr'
         }}>
             {
                 types.map((tipoCorrenteDoFor) => {

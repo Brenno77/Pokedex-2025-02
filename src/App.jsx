@@ -8,7 +8,12 @@ function App() {
 
   return (
     <>
-      <label>Pokedex</label>
+      <label style={{
+        fontSize: '3.5em',
+        fontWeight: 800,
+        color: '#1A4F89',
+        textAlign: 'center'
+      }}>Pokedex</label>
       <Typebar 
         setType={setType}
       />

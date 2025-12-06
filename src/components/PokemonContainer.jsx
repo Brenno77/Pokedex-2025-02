@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { apiFetch } from "../utils/api-fetch"
-import {formatPokemonData} from "../utils/pokemon-helper";
+import {formatPokemonData} from "../utils/pokemon-helper"
 import PokemonCard from "./PokemonCard"
 
 export default function PokemonContainer({ type }) {
@@ -23,8 +23,17 @@ export default function PokemonContainer({ type }) {
         setPokemons(novosPokemons);
     }
 
+
+
     return (
-        <div>
+        <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', 
+            gap: '20px',
+            padding: '20px',
+            backgroundColor: '#f4f4f4', 
+            fontFamily: 'Arial, sans-serif'
+        }}>
             {
                 pokemons.map((pokemonCorrenteDoFor, index) => {
                     return (
