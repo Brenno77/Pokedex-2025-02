@@ -1,3 +1,3 @@
 # React + Vite
 
-- [Pokedex-Delta](https://Brenno77.github.com/Pokedex-2025-02)
+- [Pokedex-Delta](https://brenno77.github.io/Pokedex-2025-02/)
